@@ -28,7 +28,7 @@ class MyClient(discord.Client):
         # responding ot message
         if outcome == "trivia":
             await trivia_module(message=message, client=self)
-        if outcomet == "generalQA":
+        if outcome == "generalQA":
             await generalqa_module(message=message, client=self)
         elif outcome == "unsure":
             await message.channel.send("I'm not sure I can do this kind of thing yet, if ever, let's poke the devs!")

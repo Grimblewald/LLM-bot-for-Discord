@@ -91,7 +91,7 @@ async def trivia_module(message, client, timeout=60):
             user_scores[answer.author.name] = json.loads(score)
             #return user_scores
     except asyncio.TimeoutError:
-        table = f"{str("User").ljust(15)}| {str("Score").ljust(5)} | Note\n"
+        table = f"{str('User').ljust(15)}| {str('Score').ljust(5)} | Note\n"
         table += "\n"
         for user, score in user_scores.items():
             table += f"{user.ljust(15)}| {str(score['Score']).ljust(5)} | {score['Comment']}\n"
